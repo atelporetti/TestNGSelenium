@@ -1,5 +1,9 @@
 package testNG;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.*;					// Edge
 import org.openqa.selenium.edge.EdgeDriverService.Builder;
@@ -9,6 +13,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
+//*************************************************************
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.opc.OPCPackage;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;	
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Util {
 	// DATOS
@@ -130,9 +157,34 @@ public class Util {
 		EdgeOptions opciones = new EdgeOptions();
 		//opciones.merge(entorno); MEJORAR LA UNION DE DESIRED CAPABILITIES CON EDGEOPTIONS
 		EdgeDriver driver = new EdgeDriver(service, opciones);
-		//WebDriver driver = new EdgeDriver();
+		driver.manage().window().maximize();
 		return driver;
 	}
 	
-	
+	/*
+	public static String[][] getInfoExcel(){
+		String nombreArchivo = "testData.xlsx";
+		String rutaArchivo = "D:\\Documentos\\MEGA\\PROGRAMACIÓN\\Cursos\\Selenium + Java\\Day03" + nombreArchivo;
+		String hoja = "Data";
+		String matrizDatos [][] = new String [4][2];
+		
+		int colInicio = 2, colFin = 3, filaInicio = 2, filaFin = 5;
+		
+		for (int i=colInicio; i<colFin; i++) {
+			for (int j=filaInicio; j<filaFin; j++) {
+				
+			}
+		}
+		OPCPackage pkg = OPCPackage.open(new File(nombreArchivo));
+		XSSFWorkbook excel = new XSSFWorkbook(pkg);
+		XSSFSheet hojaExcel = excel.getSheet(hoja);
+		XSSFRow row = hojaExcel.getRow(1);
+
+		
+		pkg.close();
+		
+		return matrizDatos[][];
+		
+	}
+	*/
 }
