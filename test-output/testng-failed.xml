@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.OtraPrueba">
+      <class name="testNG.Parametrizacion">
         <methods>
-          <include name="verificarTituloLandingPage"/>
-          <include name="f"/>
-          <include name="support"/>
-          <include name="finalizar"/>
-          <include name="register"/>
-          <include name="volverLandingPage"/>
-          <include name="inicio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="busquedaDesdeClase"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- testNG.OtraPrueba -->
+      </class> <!-- testNG.Parametrizacion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
