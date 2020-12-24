@@ -1,209 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-21T21:51:03 ART" name="Default suite" finished-at="2020-12-21T21:51:17 ART" duration-ms="14159">
+  <suite started-at="2020-12-23T20:56:10 ART" name="Default suite" finished-at="2020-12-23T20:56:22 ART" duration-ms="11126">
     <groups>
+      <group name="alertas">
+        <method signature="OtraPrueba.verificarBoton1()[pri:0, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton1" class="testNG.OtraPrueba"/>
+        <method signature="OtraPrueba.verificarBoton2()[pri:1, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton2" class="testNG.OtraPrueba"/>
+        <method signature="OtraPrueba.verificarBoton3()[pri:2, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton3" class="testNG.OtraPrueba"/>
+      </group> <!-- alertas -->
     </groups>
-    <test started-at="2020-12-21T21:51:03 ART" name="Default test" finished-at="2020-12-21T21:51:17 ART" duration-ms="14159">
-      <class name="testNG.Parametrizacion">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:03 ART" name="beforeSuite" finished-at="2020-12-21T21:51:03 ART" duration-ms="53" status="PASS">
+    <test started-at="2020-12-23T20:56:10 ART" name="Default test" finished-at="2020-12-23T20:56:22 ART" duration-ms="11126">
+      <class name="testNG.OtraPrueba">
+        <test-method is-config="true" signature="inicio()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:10 ART" name="inicio" finished-at="2020-12-23T20:56:18 ART" duration-ms="7815" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:03 ART" name="beforeTest" finished-at="2020-12-21T21:51:06 ART" duration-ms="3025" status="PASS">
+        </test-method> <!-- inicio -->
+        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:18 ART" name="f" finished-at="2020-12-23T20:56:18 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:06 ART" name="beforeClass" finished-at="2020-12-21T21:51:06 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="verificarBoton1()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:18 ART" name="verificarBoton1" finished-at="2020-12-23T20:56:19 ART" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:06 ART" name="beforeMethod" finished-at="2020-12-21T21:51:06 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- verificarBoton1 -->
+        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClase(java.lang.String, java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:06 ART" name="busquedaDesdeClase" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:07 ART" duration-ms="1439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mari]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Google]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- volverLandingPage -->
+        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="f" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- busquedaDesdeClase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:07 ART" name="afterMethod" finished-at="2020-12-21T21:51:07 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="verificarBoton2()[pri:1, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="verificarBoton2" finished-at="2020-12-23T20:56:19 ART" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:07 ART" name="beforeMethod" finished-at="2020-12-21T21:51:07 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- verificarBoton2 -->
+        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClase(java.lang.String, java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:07 ART" name="busquedaDesdeClase" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:09 ART" duration-ms="1287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pepe]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Facebook]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- volverLandingPage -->
+        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="f" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- busquedaDesdeClase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:09 ART" name="afterMethod" finished-at="2020-12-21T21:51:09 ART" duration-ms="0" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="verificarBoton3()[pri:2, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="verificarBoton3" finished-at="2020-12-23T20:56:20 ART" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:09 ART" name="beforeMethod" finished-at="2020-12-21T21:51:09 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- verificarBoton3 -->
+        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:20 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:20 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClase(java.lang.String, java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:09 ART" name="busquedaDesdeClase" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:10 ART" duration-ms="1328" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Coni]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Instagram]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- volverLandingPage -->
+        <test-method is-config="true" signature="finalizar()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:20 ART" name="finalizar" finished-at="2020-12-23T20:56:22 ART" duration-ms="1411" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- busquedaDesdeClase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:10 ART" name="afterMethod" finished-at="2020-12-21T21:51:10 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:10 ART" name="beforeMethod" finished-at="2020-12-21T21:51:10 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClase(java.lang.String, java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:10 ART" name="busquedaDesdeClase" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:11 ART" duration-ms="1227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mauro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[WhatsApp]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busquedaDesdeClase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:11 ART" name="afterMethod" finished-at="2020-12-21T21:51:11 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:11 ART" name="beforeMethod" finished-at="2020-12-21T21:51:11 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClaseConMetodo(java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:11 ART" name="busquedaDesdeClaseConMetodo" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:13 ART" duration-ms="1249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Argentina]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busquedaDesdeClaseConMetodo -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:13 ART" name="afterMethod" finished-at="2020-12-21T21:51:13 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="busquedaDesdeClaseConMetodo(java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:13 ART" name="busquedaDesdeClaseConMetodo" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:14 ART" duration-ms="1218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Francia]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busquedaDesdeClaseConMetodo -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:13 ART" name="beforeMethod" finished-at="2020-12-21T21:51:13 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:14 ART" name="afterMethod" finished-at="2020-12-21T21:51:14 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:14 ART" name="beforeMethod" finished-at="2020-12-21T21:51:14 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClaseConMetodo(java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:14 ART" name="busquedaDesdeClaseConMetodo" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:15 ART" duration-ms="1177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Brasil]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busquedaDesdeClaseConMetodo -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:15 ART" name="afterMethod" finished-at="2020-12-21T21:51:15 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:15 ART" name="beforeMethod" finished-at="2020-12-21T21:51:15 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="busquedaDesdeClaseConMetodo(java.lang.String)[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:15 ART" name="busquedaDesdeClaseConMetodo" data-provider="BuscadorDesdeClase" finished-at="2020-12-21T21:51:16 ART" duration-ms="1187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[EEUU]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- busquedaDesdeClaseConMetodo -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:16 ART" name="afterMethod" finished-at="2020-12-21T21:51:16 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:16 ART" name="afterClass" finished-at="2020-12-21T21:51:16 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:16 ART" name="afterTest" finished-at="2020-12-21T21:51:17 ART" duration-ms="912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testNG.Parametrizacion@545de5a4]" started-at="2020-12-21T21:51:17 ART" name="afterSuite" finished-at="2020-12-21T21:51:17 ART" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testNG.Parametrizacion -->
+        </test-method> <!-- finalizar -->
+      </class> <!-- testNG.OtraPrueba -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
