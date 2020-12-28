@@ -12,7 +12,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 public class ParametrizacionByITestContext {
-	WebDriver driver = Util.setUpManual();;	
+	WebDriver driver = Util.setUpManual();	
 	
 	@BeforeSuite
 	public void beforeSuite() {
@@ -36,7 +36,7 @@ public class ParametrizacionByITestContext {
 		System.out.println("Metodo que se ejecuta antes de cada @Test");
 	}
 	
-	@Test(dataProvider = "Buscador", groups = "A")
+	@Test(dataProvider = "Buscador", groups = "A", enabled = false)
 	public void busquedaA(String usuario, String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
@@ -49,8 +49,8 @@ public class ParametrizacionByITestContext {
 		cajaDeBusqueda.clear();
 	}
 	
-	@Test(dataProvider = "Buscador", groups = "B")
-	public void busquedaB(String usuario, String busqueda) throws InterruptedException {
+	@Test(dataProvider = "Buscador", groups = "B", enabled = false)
+	public void busquedaB(String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
 		Thread.sleep(1000);
@@ -62,8 +62,8 @@ public class ParametrizacionByITestContext {
 	}
 	
 	
-	@Test(dataProvider = "BuscadorDesdeClase", enabled = false, dataProviderClass = BuscadorDesdeClase.class)
-	public void busquedaDesdeClase(String usuario, String busqueda) throws InterruptedException {
+	@Test(dataProvider = "Buscador", groups = "A", enabled = true)
+	public void busquedasuarioContraseniaA(String usuario, String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
 		System.out.println("Usuario: " + usuario);
@@ -76,8 +76,8 @@ public class ParametrizacionByITestContext {
 	}
 	
 
-	@Test(dataProvider = "BuscadorDesdeClase", enabled = false, dataProviderClass = BuscadorDesdeClase.class)
-	public void busquedaDesdeClaseConMetodo(String busqueda) throws InterruptedException {
+	@Test(dataProvider = "Buscador", groups = "B", enabled = true)
+	public void busquedasuarioContraseniaB(String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
 		Thread.sleep(1000);

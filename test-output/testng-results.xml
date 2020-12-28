@@ -1,62 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="14" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-23T20:56:10 ART" name="Default suite" finished-at="2020-12-23T20:56:22 ART" duration-ms="11126">
+  <suite started-at="2020-12-28T11:36:33 ART" name="Suite Groups" finished-at="2020-12-28T11:36:49 ART" duration-ms="15450">
     <groups>
-      <group name="alertas">
-        <method signature="OtraPrueba.verificarBoton1()[pri:0, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton1" class="testNG.OtraPrueba"/>
-        <method signature="OtraPrueba.verificarBoton2()[pri:1, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton2" class="testNG.OtraPrueba"/>
-        <method signature="OtraPrueba.verificarBoton3()[pri:2, instance:testNG.OtraPrueba@3972a855]" name="verificarBoton3" class="testNG.OtraPrueba"/>
-      </group> <!-- alertas -->
+      <group name="A">
+        <method signature="ParametrizacionByITestContext.busquedasuarioContraseniaA(java.lang.String, java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" name="busquedasuarioContraseniaA" class="testNG.ParametrizacionByITestContext"/>
+      </group> <!-- A -->
+      <group name="B">
+        <method signature="ParametrizacionByITestContext.busquedasuarioContraseniaB(java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" name="busquedasuarioContraseniaB" class="testNG.ParametrizacionByITestContext"/>
+      </group> <!-- B -->
     </groups>
-    <test started-at="2020-12-23T20:56:10 ART" name="Default test" finished-at="2020-12-23T20:56:22 ART" duration-ms="11126">
-      <class name="testNG.OtraPrueba">
-        <test-method is-config="true" signature="inicio()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:10 ART" name="inicio" finished-at="2020-12-23T20:56:18 ART" duration-ms="7815" status="PASS">
+    <test started-at="2020-12-28T11:36:33 ART" name="A" finished-at="2020-12-28T11:36:42 ART" duration-ms="8249">
+      <class name="testNG.ParametrizacionByITestContext">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:33 ART" name="beforeTest" finished-at="2020-12-28T11:36:36 ART" duration-ms="2436" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicio -->
-        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:18 ART" name="f" finished-at="2020-12-23T20:56:18 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="busquedasuarioContraseniaA(java.lang.String, java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:36 ART" name="busquedasuarioContraseniaA" data-provider="Buscador" finished-at="2020-12-28T11:36:37 ART" duration-ms="1359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Atel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="verificarBoton1()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:18 ART" name="verificarBoton1" finished-at="2020-12-23T20:56:19 ART" duration-ms="183" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaA -->
+        <test-method signature="busquedasuarioContraseniaA(java.lang.String, java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:37 ART" name="busquedasuarioContraseniaA" data-provider="Buscador" finished-at="2020-12-28T11:36:38 ART" duration-ms="1194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vale]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Facebook]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarBoton1 -->
-        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaA -->
+        <test-method signature="busquedasuarioContraseniaA(java.lang.String, java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:38 ART" name="busquedasuarioContraseniaA" data-provider="Buscador" finished-at="2020-12-28T11:36:40 ART" duration-ms="1217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Andres]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Instagram]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- volverLandingPage -->
-        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="f" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaA -->
+        <test-method signature="busquedasuarioContraseniaA(java.lang.String, java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:40 ART" name="busquedasuarioContraseniaA" data-provider="Buscador" finished-at="2020-12-28T11:36:41 ART" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WhatsApp]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="verificarBoton2()[pri:1, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="verificarBoton2" finished-at="2020-12-23T20:56:19 ART" duration-ms="825" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaA -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.ParametrizacionByITestContext@180e6ac4]" started-at="2020-12-28T11:36:41 ART" name="afterTest" finished-at="2020-12-28T11:36:42 ART" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarBoton2 -->
-        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- afterTest -->
+      </class> <!-- testNG.ParametrizacionByITestContext -->
+    </test> <!-- A -->
+    <test started-at="2020-12-28T11:36:42 ART" name="B" finished-at="2020-12-28T11:36:49 ART" duration-ms="7076">
+      <class name="testNG.ParametrizacionByITestContext">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" started-at="2020-12-28T11:36:42 ART" name="beforeTest" finished-at="2020-12-28T11:36:44 ART" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- volverLandingPage -->
-        <test-method is-config="true" signature="f()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="f" finished-at="2020-12-23T20:56:19 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="busquedasuarioContraseniaB(java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" started-at="2020-12-28T11:36:44 ART" name="busquedasuarioContraseniaB" data-provider="Buscador" finished-at="2020-12-28T11:36:45 ART" duration-ms="1286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="verificarBoton3()[pri:2, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:19 ART" name="verificarBoton3" finished-at="2020-12-23T20:56:20 ART" duration-ms="801" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaB -->
+        <test-method signature="busquedasuarioContraseniaB(java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" started-at="2020-12-28T11:36:45 ART" name="busquedasuarioContraseniaB" data-provider="Buscador" finished-at="2020-12-28T11:36:46 ART" duration-ms="1225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Francia]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificarBoton3 -->
-        <test-method is-config="true" signature="volverLandingPage()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:20 ART" name="volverLandingPage" finished-at="2020-12-23T20:56:20 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaB -->
+        <test-method signature="busquedasuarioContraseniaB(java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" started-at="2020-12-28T11:36:46 ART" name="busquedasuarioContraseniaB" data-provider="Buscador" finished-at="2020-12-28T11:36:47 ART" duration-ms="1213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brasil]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- volverLandingPage -->
-        <test-method is-config="true" signature="finalizar()[pri:0, instance:testNG.OtraPrueba@3972a855]" started-at="2020-12-23T20:56:20 ART" name="finalizar" finished-at="2020-12-23T20:56:22 ART" duration-ms="1411" status="PASS">
+        </test-method> <!-- busquedasuarioContraseniaB -->
+        <test-method signature="busquedasuarioContraseniaB(java.lang.String)[pri:0, instance:testNG.ParametrizacionByITestContext@7997b197]" started-at="2020-12-28T11:36:47 ART" name="busquedasuarioContraseniaB" data-provider="Buscador" finished-at="2020-12-28T11:36:49 ART" duration-ms="1238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EEUU]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- finalizar -->
-      </class> <!-- testNG.OtraPrueba -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- busquedasuarioContraseniaB -->
+      </class> <!-- testNG.ParametrizacionByITestContext -->
+    </test> <!-- B -->
+  </suite> <!-- Suite Groups -->
 </testng-results>

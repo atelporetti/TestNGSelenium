@@ -23,8 +23,8 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="testNG.Grupo1" />
-			<class name="testNG.Grupo2" />
+			<class name="testNG.Parametrizacion" />
+			<!--<class name="testNG.BuscadorDesdeClase" />-->
 		</classes>
 	</test>
 	<test name="Test B">

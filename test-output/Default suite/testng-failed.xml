@@ -12,6 +12,7 @@
           <include name="afterTest"/>
           <include name="busquedaDesdeClase"/>
           <include name="afterClass"/>
+          <include name="busquedaDesdeClaseConMetodo"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>

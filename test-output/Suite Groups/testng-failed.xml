@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test A(failed)">
+    <groups>
+      <run>
+        <include name="Grupo 1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNG.Parametrizacion">
+        <methods>
+          <include name="busquedaDesdeClase"/>
+          <include name="busquedaDesdeClaseConMetodo"/>
+        </methods>
+      </class> <!-- testNG.Parametrizacion -->
+    </classes>
+  </test> <!-- Test A(failed) -->
+</suite> <!-- Failed suite [Suite Groups] -->

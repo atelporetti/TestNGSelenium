@@ -35,7 +35,7 @@ public class Parametrizacion {
 		System.out.println("Metodo que se ejecuta antes de cada @Test");
 	}
 	
-	@Test(dataProvider = "Buscador", enabled = false)
+	@Test(groups = "B", dataProvider = "Buscador", enabled = true)
 	public void busqueda(String usuario, String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
@@ -49,7 +49,7 @@ public class Parametrizacion {
 	}
 	
 	
-	@Test(dataProvider = "BuscadorDesdeClase", enabled = true, dataProviderClass = BuscadorDesdeClase.class)
+	@Test(groups = "X", enabled = false, dataProvider = "BuscadorDesdeClase", dataProviderClass = BuscadorDesdeClase.class)
 	public void busquedaDesdeClase(String usuario, String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
@@ -63,7 +63,7 @@ public class Parametrizacion {
 	}
 	
 
-	@Test(dataProvider = "BuscadorDesdeClase", dataProviderClass = BuscadorDesdeClase.class)
+	@Test(groups = "X", enabled = false, dataProvider = "BuscadorDesdeClase", dataProviderClass = BuscadorDesdeClase.class)
 	public void busquedaDesdeClaseConMetodo(String busqueda) throws InterruptedException {
 		WebElement cajaDeBusqueda = driver.findElement(By.cssSelector("input[name='q']"));
 		cajaDeBusqueda.sendKeys(busqueda);
