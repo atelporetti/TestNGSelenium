@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--colocar -Dtestng.dtd.http=true dentro de las configuraciones de argumentos 
+	de VM del TESTNG class -->
+<suite name="Suite Groups">
+	<!-- si el groups esta despues de la etiqueta suite, este grupo se aplicara 
+		a todos las etiquetas test siguientes -->
+	<!-- si el groups esta despues de la etiqueta test, este grupo se aplicara 
+		solo a los test particulares dentro de ella -->
+
+	<test name="Test JavaScript">
+		<groups>
+			<run>
+				<!-- aca va el mismo nombre que se utiliza dentro del @Test(groups = "") -->
+				<include name = "A" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.inyeccionJavaScript" />
+		</classes>
+	</test>
+	
+</suite>

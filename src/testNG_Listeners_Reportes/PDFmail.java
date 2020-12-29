@@ -1,0 +1,39 @@
+package testNG_Listeners_Reportes;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+@Listeners(JyperionListener.class)
+public class PDFmail extends Util {
+	WebDriver driver = Util.setUpManual();
+	
+	@Test
+	public void pruebaA() {
+		driver.get("www.google.com.ar");
+		Assert.assertTrue(false);
+	}
+	
+	@Test
+	public void pruebaB() {
+		driver.get("www.facbeook.com");
+		Assert.assertTrue(true);
+	}
+	
+	@Test
+	public void pruebaC() {
+		driver.get("www.gmail.com");
+		Assert.assertTrue(false);
+	}
+	
+	@AfterTest
+	public void cerrar() {
+		driver.quit();
+	}
+	
+	@AfterSuite
+	public void enviarCorreo() {
+		enviaEmail("aaxelporetti@gmail.com", "dios8es7amor", "aaxelporetti@gmail.com", "Prueba", "Cuerpo de correo");
+	}
+	
+}

@@ -22,6 +22,9 @@ import java.util.*;
 import java.util.concurrent.*; 								// Para Hacer Esperas Implicitas
 import org.openqa.selenium.support.ui.ExpectedConditions;	// Esperas Explicitas
 import org.openqa.selenium.support.ui.WebDriverWait;		// Esperas Explicitas
+import org.testng.annotations.Listeners;
+
+import testNG_Listeners_Reportes.ModificarReporte;
 
 
 public class CodigosYComandos {
@@ -128,6 +131,8 @@ public class CodigosYComandos {
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// INTERACTIONS COMMANDS
+	//	Select nombreVariable = new Select(WebElement);
+	//	nombreVariable.  --->
 
 	/*
 		INPUT					sendKeys()	
@@ -207,7 +212,7 @@ public class CodigosYComandos {
 		
 //			Xpath=//tagname[@attribute='value']
 //				Xpath=//label[starts-with(@attribute,'value')]		and | or
-//				Xpath=//label[contains(@attribute,'value')]			and | or
+//				Xpath=//label[contains(@attribute,'value')]			and | or		Ej: label[contains(text(),'value')]	
 //				Xpath=//label[text()='value']										si en el texto esta el contenido. Se puede usar text() dentro del contains
 //				Xpath=//*[@attribute='value']//following::tagname[indice]			para seleccionar todos los elementos del tipo dentro del nodo
 //				Xpath=//*[@attribute='value']//ancestor::tagname[indice]			para seleccionar todos los elementos del tipo, dentro de los ancestros del nodo del elemento seleccionado
@@ -264,7 +269,7 @@ public class CodigosYComandos {
 //			TEST-NG COMMANDS
 
 //		@Test(priority = X)								"0" es el mas importante. Primero: Test sin prioridad + orden Alfabetico. Segundo: Test con prioridad + orden alfabetico. Para  ejecutar  las pruebas en un orden especifico y no en el alfabetico del nombre de cada una
-//		@Test(priority = X, alwaysRun = true/false, enabled = true/false, groups = "nombre", dataProvider = "nombre", dataProviderClass = "nombreDelDataProvider")		
+//		@Test(priority = X, alwaysRun = true/false, enabled = true/false, groups = "nombre" o {"n1", "n2", ...}, dataProvider = "nombre", dataProviderClass = "nombreDelDataProvider", dependsOnMethods = "nombreDelMetodo")		
 //		@BeforeTest										para ejecutarse antes del primer caso de prueba
 //		@AfterTest										para ejecutarse despues del ultimo caso de prueba
 //		@BeforeMethod									para ejecutarse antes de cada Test
@@ -285,6 +290,29 @@ public class CodigosYComandos {
 DESCRIPCION		PRE-CONDICIONES		PASOS											RESULTADO ESPERADO		POST-CONDICIONES
 @Test			@BeforeTest			@BeforeMethod (p/c paso que sea comun)									@AfterMethod
 		*/
+
+		
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//			INTERFACES LISTENERS. Paa modificar el comportamiento de TestNG
+//			@Listeners(NombreDeLaClase.class)
+		
+//		ISuite	
+//		IMethodInterceptor										
+//		IConfiguration										
+//		IHookable			
+//		IEx	ecutionListener			
+//		IAnnotationTransformer			
+//		IinvokedMethod			
+//		IReporter			
+//		ITest			
+		
+
+		
+		
+		
+		
 		
     }
 	

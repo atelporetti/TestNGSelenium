@@ -3,20 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.Parametrizacion">
+      <class name="testNG_Listeners_Reportes.PDFmail">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="busquedaDesdeClase"/>
-          <include name="afterClass"/>
-          <include name="busquedaDesdeClaseConMetodo"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
+          <include name="cerrar"/>
+          <include name="pruebaC"/>
+          <include name="enviarCorreo"/>
+          <include name="pruebaA"/>
+          <include name="pruebaB"/>
         </methods>
-      </class> <!-- testNG.Parametrizacion -->
+      </class> <!-- testNG_Listeners_Reportes.PDFmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

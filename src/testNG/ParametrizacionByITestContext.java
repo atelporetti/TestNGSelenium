@@ -12,8 +12,8 @@ import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 public class ParametrizacionByITestContext {
-	WebDriver driver = Util.setUpManual();	
-	
+	WebDriver driver = Util.setUpManual();
+
 	@BeforeSuite
 	public void beforeSuite() {
 		System.out.println("Metodo que se ejecuta antes de una suite de pruebas");

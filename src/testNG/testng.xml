@@ -15,6 +15,7 @@
 				<include name="A" />
 				<include name="B" />
 				<include name="C" />
+				<include name="X" />
 			</define>
 			<run>
 				<!-- aca va el mismo nombre que se utiliza dentro del @Test(groups = "") -->
