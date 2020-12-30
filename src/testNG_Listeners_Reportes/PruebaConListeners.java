@@ -8,12 +8,12 @@ public class PruebaConListeners {
 	
 	@Test
 	public void prueba1() {
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 	}
 	
 	@Test
 	public void prueba2() {
-		Assert.assertTrue(false);
+		Assert.assertTrue(true);
 	}
 	
 	@Test(dependsOnMethods = "prueba2")

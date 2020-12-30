@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Listeners_Reportes.PDFmail">
+      <class name="testNG_Listeners_Reportes.PruebaConListeners">
         <methods>
-          <include name="cerrar"/>
-          <include name="pruebaC"/>
-          <include name="enviarCorreo"/>
-          <include name="pruebaA"/>
-          <include name="pruebaB"/>
+          <include name="prueba1"/>
         </methods>
-      </class> <!-- testNG_Listeners_Reportes.PDFmail -->
+      </class> <!-- testNG_Listeners_Reportes.PruebaConListeners -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

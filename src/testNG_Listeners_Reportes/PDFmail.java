@@ -1,8 +1,9 @@
 package testNG_Listeners_Reportes;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import testNG_Listeners_Reportes.Util;
 
 @Listeners(JyperionListener.class)
 public class PDFmail extends Util {
@@ -33,7 +34,7 @@ public class PDFmail extends Util {
 	
 	@AfterSuite
 	public void enviarCorreo() {
-		enviaEmail("aaxelporetti@gmail.com", "dios8es7amor", "aaxelporetti@gmail.com", "Prueba", "Cuerpo de correo");
+		enviaEmail("***@gmail.com", "***", "***@gmail.com", "Prueba", "Cuerpo de correo");
 	}
 	
 }
